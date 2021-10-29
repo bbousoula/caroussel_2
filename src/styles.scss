@@ -1,0 +1,139 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+.carousel-wrapper{
+  position: relative;
+}
+
+.carousel {
+  margin: 0px auto;
+  max-width: 1183px;
+  max-height: 190px;
+  position: relative;
+}
+
+.carousel__slider {
+  max-width: 950px;
+  min-width: 750px;
+  height: 220px;
+  margin: 0 auto;
+  padding: 0px 7.5%;
+}
+.carousel__slide {
+  max-width: 190px;
+}
+
+.content-image {
+  position: relative;
+  margin-bottom: 29px;
+  width: auto;
+  @media only screen and (max-width: 800px) {
+    margin-bottom: 50px;
+  }
+}
+.content-image__top{
+  display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+.tools-img {
+  width: auto;
+  transition: transform 0.3s ease 0s;
+  height: 120px;
+  @media only screen and (max-width: 950px) {
+    height: 100px;
+  }
+}
+.content-svg{
+  top: 88px;
+  background-color: #fff;
+  border: solid 1px #00b2a9;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  cursor: pointer;
+    img {
+      vertical-align: middle;
+      border-style: none;
+    }
+}
+.txt{
+  display: block;
+  text-align: center;
+  letter-spacing: 0.05px;
+  color:#1e647d;
+  cursor: pointer;
+  width: auto;
+  margin: auto;
+  max-width: 153px;
+  font-size: 14px;
+  line-height: 1.43;
+  text-decoration: none;
+}
+
+.carousel__next-button{
+  width: 40px;
+  height: 38px;
+  border: none;
+  background: #00b2a9;
+  padding: 8px;
+  position: absolute;
+  top: 41.4%;
+  outline: none;
+  z-index: 2;
+}
+
+.carousel .carousel__next-button{
+  right: -19px;
+}
+.carousel__back-button{
+  width: 40px;
+  height: 38px;
+  border: none;
+  background: #00b2a9;
+  padding: 8px;
+  position: absolute;
+  top: 41.4%;
+  outline: none;
+  z-index: 2;
+}
+.carousel .carousel__back-button{
+  left: -19px;
+}
+.carousel__slider--horizontal{
+  max-height: 360px;
+}
+
+.carousel__next-button:disabled {
+  display: none;
+}
+.carousel__right-button:disabled {
+  display: none;
+}
+
+.overlay-gradient {
+  height: 100%;
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+
+.overlay-gradient-noback.overlay-gradient-right {
+  background-image: linear-gradient(to right,rgba(229,246,246,0) 0%,#fff 81%);
+  right: 0px;
+  //left: 0px;
+}
+
+.overlay-gradient-noback.overlay-gradient-left {
+  background-image: linear-gradient(
+90deg,#fff 0%,rgba(229,246,246,0) 81%);
+  left: 0px;
+  
+}
